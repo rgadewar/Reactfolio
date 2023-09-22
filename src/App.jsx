@@ -1,4 +1,4 @@
-import './app.css'; // Import your app.css file
+import './App.css'; // Import your app.css file
 
 import { Outlet } from 'react-router-dom';
 import Nav from './components/NavTabs';
