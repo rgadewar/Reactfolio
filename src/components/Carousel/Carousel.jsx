@@ -1,46 +1,73 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "../Carousel/Carousel.css"
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import './Carousel.css';
+
+const images = ['logo11.jpg', 'web.jpg', 'Code.jpg'];
+const titles = ['RupaG Web Design', 'Full Stack Developer', 'Responsive Web Design'];
+const buttonTexts = ['Get in Touch!', 'Know my Work!', 'Check It Out!'];
+const links = ['/contact', '/portfolio', '/portfolio'];
 
 function Carousel() {
-    return (
-        <div className="container-fluid" id="carouselcontainer">
-        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-            <ol className="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <img src="../Images/logo11.jpg" className="d-block w-100" alt="..."/>
-                    <div className="carousel-caption">
-                        <h1 className="display-2">RupaG Web Design</h1>
-                        {/* <a href="/contact" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-lg" role="button" id="button1">Get in Touch!</a> */}
-                        <Link to="/contact" className="btn btn-outline-light btn-lg" role="button" id="button1">Get in Touch!</Link>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img src="../Images/web.jpg" className="d-block w-100" alt="..."/>
-                    <div className="carousel-caption">
-                        <h1 className="display-2">Full Stack Developer</h1>
-                        {/* <a href="/portfolio" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-lg" role="button" id="button2">Know my Work!</a> */}
-                        <Link to="/portfolio" className="btn btn-outline-light btn-lg" role="button" id="button2">Know my Work!</Link>
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img src="../Images/Code.jpg" className="d-block w-100" alt="..."/>
-                    <div className="carousel-caption">
-                        <h1 className="display-2" id="responsive">Responsive Web Design</h1>
-                        {/* <a href="/portfolio" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-lg" role="button" id="button3">Check It Out!</a> */}
-                        <Link to="/portfolio" className="btn btn-outline-light btn-lg" role="button" id="button3">Check It Out!</Link>
-                    </div>
-                </div>
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Function to go to the next slide
+  const goToNextSlide = () => {
+    setCurrentIndex((currentIndex + 1) % images.length);
+  };
+
+  // Function to go to the previous slide
+  const goToPrevSlide = () => {
+    setCurrentIndex((currentIndex - 1 + images.length) % images.length);
+  };
+
+  // Function to automatically advance the slide
+  const autoAdvanceSlide = () => {
+    goToNextSlide();
+  };
+
+  useEffect(() => {
+    // Set an interval to auto-advance the slide every 5 seconds (5000 milliseconds)
+    const interval = setInterval(autoAdvanceSlide, 5000);
+
+    // Clear the interval when the component unmounts to prevent memory leaks
+    return () => clearInterval(interval);
+  }, [currentIndex]);
+
+  return (
+    <div className="container-fluid" id="carouselcontainer">
+      <div
+        id="carouselExampleIndicators"
+        className="carousel slide"
+        data-ride="carousel"
+        data-interval="false" // Set data-interval to false to prevent manual slide interruption
+      >
+        <ol className="carousel-indicators">
+          {images.map((_, index) => (
+            <li
+              key={index}
+              data-target="#carouselExampleIndicators"
+              data-slide-to={index}
+              className={currentIndex === index ? 'active' : ''}
+            ></li>
+          ))}
+        </ol>
+        <div className="carousel-inner">
+          {images.map((image, index) => (
+            <div key={index} className={`carousel-item ${currentIndex === index ? 'active' : ''}`}>
+              <img src={`../Images/${image}`} className="d-block w-100" alt={`Image ${index + 1}`} />
+              <div className="carousel-caption">
+                <h1 className="display-2">{titles[index]}</h1>
+                <Link to={links[index]} className="btn btn-outline-light btn-lg" role="button" id="button1">
+                  {buttonTexts[index]}
+                </Link>
+              </div>
             </div>
+          ))}
         </div>
+        {/* Removed previous and next slide buttons */}
+      </div>
     </div>
-    
-    )
+  );
 }
 
-export default  Carousel;
+export default Carousel;
