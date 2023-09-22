@@ -28,7 +28,10 @@ function Navbar(props) {
                         {/* <a className="nav-link" href="/contact">Contact</a> */}
                         <Link className="nav-link" to="/contact">Contact</Link>
                     </li>
-                    
+                    <li className="nav-item active">
+                        {/* <a className="nav-link" href="/contact">Contact</a> */}
+                        <Link className="nav-link" to="/resume">Resume</Link>
+                    </li>
                 </ul>
             </div>
         </div>    

@@ -21,11 +21,11 @@
 }
 
 #button2 {
-    background-color:rgba(108, 109, 112, 0.842);
+    background-color: rgba(108, 109, 112, 0.842);
 }
 
 #button3 {
-    background-color: rgba(108, 109, 112, 0.842);    
+    background-color: rgba(108, 109, 112, 0.842);
 }
 
 /* Add this CSS to style the custom dash controls */
@@ -49,3 +49,6 @@
     color: #007bff; /* Active dash color */
   }
   
+  /* Add this CSS to your Carousel.css file */
+  
+
