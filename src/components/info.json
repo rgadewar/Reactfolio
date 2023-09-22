@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "title": "Full Stack App",
+        "src": "../Images/mock_restaurant.png",
+        "alt": "cookieImg",
+        "link": "https://mock-restaurant-9eb3720005cf.herokuapp.com/",
+        "button": "Cookie Bar"
+    },
+    {
+        "id": 2,
+        "title": "Full Stack App",
+        "src": "../Images/TechBlog.png",
+        "alt": "TechBlogImg",
+        "link": "https://dev-journal-cms-fb3b6f21d6e9.herokuapp.com/",
+        "button": "Tech Blog"
+    },
+    {
+        "id": 3,
+        "title": "Heroku App",
+        "src": "../Images/Notes.png",
+        "alt": "NoteImg",
+        "link": "https://node-js-note-taker-app-fc3aa69be8cb.herokuapp.com/",
+        "button": "Note Taker"
+    },
+    {
+        "id": 4,
+        "title": "Full Stack App",
+        "src": "../Images/community.png",
+        "alt": "CommunityImg",
+        "link": "https://communityconnect-5b67df472560.herokuapp.com/login/",
+        "button": "Community Connect"
+    },
+    {
+        "id": 5,
+        "title": "Weather Dashboard",
+        "src": "../Images/weather.png",
+        "alt": "WeatherImg",
+        "link": "https://rgadewar.github.io/WeatherInfoFetcher/",
+        "button": "Check the Weather!"
+    },
+    {
+        "id": 6,
+        "title": "Work Day Scheduler",
+        "src": "../Images/day.png",
+        "alt": "ScheduleImg",
+        "link": "https://rgadewar.github.io/challenge5/",
+        "button": "Organize Your Day!"
+    },
+    {
+        "id": 7,
+        "title": "Password Generator",
+        "src": "../Images/password.png",
+        "alt": "PasswordImg",
+        "link": "https://rgadewar.github.io/challenge3/",
+        "button": "Generate Password!"
+    },
+    {
+        "id": 8,
+        "title": "Quiz Game",
+        "src": "../Images/quiz.png",
+        "alt": "QuizImg",
+        "link": "https://rgadewar.github.io/challenge4/",
+        "button": "Prove your knowledge!"
+    }
+    
+    
+]

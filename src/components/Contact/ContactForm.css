@@ -1,0 +1,66 @@
+/* Contact Form */
+
+#disp4 {
+    margin-top: 65px;
+    font-family: Gloss and Bloom;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+}
+
+#disp5 {
+    margin-top: -30px;
+    font-family: Gloss and Bloom;
+    letter-spacing: 2px;
+    color: white;
+    text-align: center;
+}
+
+#contact {
+    /* background-image: url('Images/web.jpg'); */
+    background-size: cover;
+    padding-top: 70px;
+    width: 100%;
+    /* height: 670px; */
+  }
+  
+
+.contact-form {
+    background: rgba(0, 0, 0, .6);
+    color: white;
+    margin-top: 25px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 3px gray;
+    
+}
+
+#facebook {
+    color: white;
+    padding-left: 50px;
+} 
+
+#youtube {
+    color: white;
+    padding-left: 100px;
+} 
+
+#soundcloud {
+    padding-left: 30px;
+    color: white;
+} 
+
+#instagram {
+    color: white;
+    margin-left: 110px;
+} 
+.social a {
+    font-size: 4.5em;
+}
+
+#socialnet {
+    padding-top: 20px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}

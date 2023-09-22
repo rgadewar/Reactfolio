@@ -1,0 +1,29 @@
+/* Carousel */
+
+#carouselcontainer {
+    padding-top: 50px;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+}
+
+.display-2 {
+    font-family: Gloss and Bloom;
+}
+
+#button2 {
+    background-color:rgba(108, 109, 112, 0.842);
+}
+
+#button3 {
+    background-color: rgba(108, 109, 112, 0.842);    
+}

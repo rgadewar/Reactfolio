@@ -1,0 +1,27 @@
+/* Footer */
+
+footer {
+    color: white;
+    /* background-color: black; */
+    
+}
+
+footer h5 {
+    text-align: center;
+    font-family: Gloss and Bloom;
+    letter-spacing: 2px;
+}
+
+#CopyR {
+    font-family: Gloss and Bloom;
+    text-align: center;
+}
+
+#MainLinks {
+    color: white;
+
+}
+
+#SitesOf {
+    color: white;
+}

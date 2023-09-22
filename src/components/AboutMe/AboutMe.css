@@ -1,0 +1,18 @@
+/* About Me Section */
+
+#jumbo {
+    padding-top: 20px;
+}
+
+.jumbotron {
+    padding: 2rem 2rem;
+    border-radius: 0;
+    margin-top: 60px;
+    background-color: #9A9B9C;
+}
+
+#About {
+    font-family: Gloss and Bloom;
+    text-align: center;
+    padding-top: 10px;
+}
