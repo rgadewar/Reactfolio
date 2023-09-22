@@ -18,7 +18,7 @@
     {
         "id": 3,
         "title": "Heroku App",
-        "src": "../Images/Notes.png",
+        "src": "../Images/note.png",
         "alt": "NoteImg",
         "link": "https://node-js-note-taker-app-fc3aa69be8cb.herokuapp.com/",
         "button": "Note Taker"
@@ -34,7 +34,7 @@
     {
         "id": 5,
         "title": "Weather Dashboard",
-        "src": "../Images/weather.png",
+        "src": "../Images/thunderstorm.png",
         "alt": "WeatherImg",
         "link": "https://rgadewar.github.io/WeatherInfoFetcher/",
         "button": "Check the Weather!"
@@ -42,7 +42,7 @@
     {
         "id": 6,
         "title": "Work Day Scheduler",
-        "src": "../Images/day.png",
+        "src": "../Images/Scheduler.png",
         "alt": "ScheduleImg",
         "link": "https://rgadewar.github.io/challenge5/",
         "button": "Organize Your Day!"
@@ -50,7 +50,7 @@
     {
         "id": 7,
         "title": "Password Generator",
-        "src": "../Images/password.png",
+        "src": "../Images/Password-gen.png",
         "alt": "PasswordImg",
         "link": "https://rgadewar.github.io/challenge3/",
         "button": "Generate Password!"
@@ -58,7 +58,7 @@
     {
         "id": 8,
         "title": "Quiz Game",
-        "src": "../Images/quiz.png",
+        "src": "../Images/Quiz-game.png",
         "alt": "QuizImg",
         "link": "https://rgadewar.github.io/challenge4/",
         "button": "Prove your knowledge!"
