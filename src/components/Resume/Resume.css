@@ -1,14 +1,50 @@
 /* Resume Section */
-
-#jumbo {
-    padding-top: 20px;
-}
-
-.jumbotron {
-    padding: 2rem 2rem;
-    border-radius: 0;
-    margin-top: 60px;
-    background-color: #9A9B9C;
-}
-
-
+.resume {
+    margin-top: 200px; /* Change the margin-top value to your desired value */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: gray;;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 3px gray;
+  }
+  
+  
+  .resume h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Gloss and Bloom'; /* Apply the same font-family */
+    letter-spacing: 2px;
+  }
+  
+  .resume a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .resume a:hover {
+    text-decoration: underline;
+  }
+  
+  .proficiencies {
+    margin-top: 30px;
+  }
+  
+  .proficiencies h3 {
+    font-size: 18px;
+  }
+  
+  .proficiencies ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 0;
+  }
+  
+  .proficiencies li {
+    margin-bottom: 5px;
+  }
+  
+  /* Additional styles for specific elements */
+  

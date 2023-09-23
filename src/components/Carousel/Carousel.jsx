@@ -10,12 +10,10 @@ const links = ['/contact', '/portfolio', '/portfolio'];
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Function to go to the next slide
   const goToNextSlide = () => {
     setCurrentIndex((currentIndex + 1) % images.length);
   };
 
-  // Function to go to the previous slide
   const goToPrevSlide = () => {
     setCurrentIndex((currentIndex - 1 + images.length) % images.length);
   };
@@ -64,10 +62,33 @@ function Carousel() {
             </div>
           ))}
         </div>
-        {/* Removed previous and next slide buttons */}
+        <a
+          className="carousel-control-prev"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+          onClick={goToPrevSlide}
+        >
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="sr-only">Previous</span>
+        </a>
+        <a
+          className="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+          onClick={goToNextSlide}
+        >
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="sr-only">Next</span>
+        </a>
       </div>
     </div>
   );
 }
 
 export default Carousel;
+
+
+
+
