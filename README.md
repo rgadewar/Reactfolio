@@ -1,4 +1,4 @@
-## E-NodeCommerce
+## Reactfolio
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-red)
   
