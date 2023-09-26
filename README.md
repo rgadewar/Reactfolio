@@ -11,9 +11,6 @@ Challenge is to create a portfolio, using your new React skills to help set you 
 ![Image 1](./assets/resume.png)
 ![Image 1](./assets/contact.png)
 
-### App working example
-[Video Link Gets](https://drive.google.com/file/d/1_kYQCYOCXnyy_Z1XVhEurYhZMmcJHu7G/view)
-[Video Link PUT CREATE Delete](https://drive.google.com/file/d/1nSkrV2p5CHyMv_xbSQn9wQsj0pCOV41F/view?usp=sharing)
 
 ## User Story
 AS AN employer looking for candidates with experience building single-page applications
