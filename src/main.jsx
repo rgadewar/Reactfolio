@@ -9,7 +9,6 @@ import Error from './pages/Error';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import About from './pages/About';
-import Blog from './pages/Blog';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
