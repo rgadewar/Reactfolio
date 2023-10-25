@@ -7,16 +7,16 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
-  }
-  // build: {
-  //   // Exclude .docx files from being processed by Rollup
-  //   rollupOptions: {
-  //     output: {
-  //       // Ensure that .docx files are not processed by Rollup
-  //       exclude: ['**/*.docx'],
-  //     },
-  //   },
-  // },
-  // // Include .docx files as assets
-  // assetsInclude: ['**/*.docx'],
+  },
+  build: {
+    // Exclude .docx files from being processed by Rollup
+    rollupOptions: {
+      output: {
+        // Ensure that .docx files are not processed by Rollup
+        exclude: ['**/*.docx'],
+      },
+    },
+  },
+  // Include .docx files as assets
+  assetsInclude: ['**/*.docx'],
 });
